@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.stopwatch-container {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.3);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    width: 90%;
+    max-width: 500px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 5px;
+}
+
+.task-name {
+    font-size: 1rem;
+    margin-bottom: 30px;
+    opacity: 0.7;
+}
+
+.time-display {
+    font-size: 3.5rem;
+    font-weight: bold;
+    font-family: 'Courier New', monospace;
+    background: rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    letter-spacing: 2px;
+}
+
+.buttons {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+button {
+    padding: 12px 25px;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: #fff;
+}
+
+#startBtn { background: #27ae60; }
+#pauseBtn { background: #e74c3c; }
+#resetBtn { background: #3498db; }
+#lapBtn { background: #f39c12; }
+
+button:hover {
+    transform: translateY(-2px);
+    opacity: 0.9;
+}
+
+.laps-container {
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.laps-container h3 {
+    margin-bottom: 15px;
+    opacity: 0.9;
+}
+
+#lapsList {
+    list-style: none;
+    text-align: left;
+}
+
+#lapsList li {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 10px 15px;
+    margin-bottom: 8px;
+    border-radius: 8px;
+    font-family: 'Courier New', monospace;
+}
